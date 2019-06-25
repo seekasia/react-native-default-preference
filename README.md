@@ -62,6 +62,7 @@ function setMultiple(data:Object):Promise<Void>;
 function clearMultiple(keys:Array<String>):Promise<Void>;
 function getAll():Promise<Object>;
 function clearAll():Promise<Void>;
+function getInt(key:String):Promise<Integer>; (For Android ONLY)
 
 /** Gets and sets the current preferences file name (android) or user default suite name (ios) **/
 function getName():Promise<String>;
