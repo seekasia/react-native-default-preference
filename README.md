@@ -1,20 +1,20 @@
-
-
-**Looking for maintainer**
-
-I have actually never used this library after creating it, because the project originally needed this library has discontinued. I would like to invite anyone who would like to take up the maintainer role to contact me directly though email or leave a messsage in the issue list.
+[![npm version](https://badge.fury.io/js/react-native-default-preference.svg)](https://badge.fury.io/js/react-native-default-preference)
 
 # react-native-default-preference
 
 
-Use `SharedPreference` (Android) and `UserDefaults` (iOS) with React Native over a unified interface.
-All data are stored as String, in case more complex data structure is needed, serialize it (e.g. JSON)
+Use `SharedPreferences` (Android) and `UserDefaults` (iOS) with React Native over a unified interface.
+All data is stored as a string. If you need to support more complex data structures, use serialization/deserialization (e.g. JSON).
 
 ## Getting started
 
 `$ npm install react-native-default-preference --save`
 
-### Mostly automatic installation
+### React Native >= 0.60
+
+`$ cd ios && pod install`
+
+### React Native <= 0.59
 
 `$ react-native link react-native-default-preference`
 
